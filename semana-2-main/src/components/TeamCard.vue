@@ -5,7 +5,7 @@
         <div class="d-flex justify-content-center p-2">
             <div class="card-block"> 
             <picture>
-          <img :src="member.image" class="img-fluid"  alt="Fotografía del Programador" >
+          <img :src="member.image" class="img-fluid"  alt="Fotografía del Programador" style="max-height: 200px;">
             </picture>
             </div>
         </div>

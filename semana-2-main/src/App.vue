@@ -1,26 +1,27 @@
 <template>
   <div id="app">
-     <div class="container-fluid">
-     <div class="row justify-content-center mb-5">
-       <div class="col mt-5" v-for="(item, index) of member" :key="index">
-  <team-card v-bind:member="item" ></team-card>
-</div>
-  </div>
-   </div>
+    <div class="container-fluid">
+      <news-api></news-api>
     </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col mt-5" v-for="(item, index) of member" :key="index">
+        <team-card v-bind:member="item" ></team-card>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-
+import NewsApi from './components/NewsApi.vue'
 import TeamCard from './components/TeamCard.vue'
-
 
 export default {
   
   name: 'App',
 
 components:{
-  TeamCard
+  TeamCard,
+  NewsApi
 },
 
   data(){
